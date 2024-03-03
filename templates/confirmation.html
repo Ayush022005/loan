@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application Confirmation</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        /* Container for confirmation details */
+        .confirmation-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling details */
+        .confirmation-details {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .confirmation-result {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #4caf50; /* Green color for approval */
+        }
+    </style>
+</head>
+<body>
+    <h1>Education Loan Application Confirmation</h1>
+    <p><strong>Name:</strong> {{ result.name }}</p>
+    <p><strong>Age:</strong> {{ result.age }}</p>
+    <p><strong>Purpose:</strong> {{ result.purpose }}</p>
+    <p><strong>Loan Amount:</strong> {{ result.amount }}</p>
+    <p><strong>CIBIL Score:</strong> {{ result.cibil_score }}</p>
+    <p><strong>Current Debts:</strong> {{ result.current_debts }}</p>
+    <p><strong>Loan Duration:</strong> {{ result.duration }} months</p>
+    <p><strong>Current Assets:</strong> {{ result.current_assets }}</p>
+
+    <h2>Loan Approval Result:</h2>
+    <p>{{ result.approval_result }}</p>
+</body>
+</html>
