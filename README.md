@@ -44,10 +44,6 @@ This project consists of a Flask web application that takes input parameters fro
 - Users can input their details including name, age, purpose of the loan, loan amount, CIBIL score, current debts, loan duration, current assets, and monthly income.
 - The system then evaluates the input against predefined criteria and provides a loan approval result.
 
-## Contributors
-
-- [Your Name](https://github.com/your_username)
-- [Contributor 2](https://github.com/contributor2)
 
 ## License
 
